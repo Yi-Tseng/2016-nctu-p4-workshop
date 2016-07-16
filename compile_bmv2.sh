@@ -1,10 +1,10 @@
 #!/bin/bash
 source env.sh
 COMPILER=$P4C_BM_PATH/p4c_bm/__main__.py
-if [ -f "sf.json" ]
+if [ -f "demo.json" ]
 then
-    echo "sf.json exist, remove it"
+    echo "demo.json exist, remove it"
     rm sf.json
 fi
 
-$COMPILER --json sf.json main.p4
+$COMPILER --json demo.json main.p4

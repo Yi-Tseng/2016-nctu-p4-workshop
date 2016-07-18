@@ -12,8 +12,8 @@ import sys
 h1 - s1 - h2
 '''
 
-SW_PATH='~/bmv2/targets/simple_switch/simple_switch'
-JSON_PATH='~/p4-workshop/demo.json'
+SW_PATH='/home/yi/bmv2/targets/simple_switch/simple_switch'
+JSON_PATH='/home/yi/p4-workshop/demo.json'
 
 
 def main():

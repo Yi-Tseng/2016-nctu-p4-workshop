@@ -1,6 +1,6 @@
 #include "parsers.p4"
-#include "headers.p4"
 #include "registers.p4"
+#include "metadata.p4"
 
 table state_lookup {
     actions {

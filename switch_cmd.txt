@@ -1,7 +1,7 @@
-table_add forward action_forward 0 =>
-table_add forward action_forward 1 =>
+table_add forward action_forward 0 => 0
+table_add forward action_forward 1 => 1
 
 table_set_default update_state action_state_update
-table_set_default state_lookup
+table_set_default state_lookup action_state_look_up
 table_set_default drop action_drop
 table_set_default reset_count action_reset_count

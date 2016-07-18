@@ -12,7 +12,7 @@ table state_lookup {
 }
 
 action action_state_look_up() {
-    register_read(packet_count_meta.count, packet_count_reg, my_header.src)
+    register_read(packet_count_meta.count, packet_count_reg, my_header.src);
 }
 
 table forward {

@@ -7,7 +7,7 @@ from time import sleep
 def main():
 
     while(1):
-        p = "\x01Hello"
+        p = "\x00\x01Hello"
         sendp(p, iface = "eth0")
         sleep(1)
 

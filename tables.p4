@@ -3,9 +3,6 @@
 #include "registers.p4"
 
 table state_lookup {
-    reads {
-        my_header.src: exact;
-    }
     actions {
         action_state_look_up;
     }
@@ -39,9 +36,6 @@ action action_drop() {
 }
 
 table update_state {
-    reads {
-        my_header.src: exact;
-    }
     actions {
         action_state_update;
     }
@@ -53,9 +47,6 @@ action action_state_update() {
 }
 
 table reset_count {
-    reads {
-        my_header.src: exact;
-    }
     actions {
         action_reset_count;
     }

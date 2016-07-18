@@ -1,8 +1,6 @@
 #include "tables.p4"
 
-control ingress {
-    apply(state_lookup);
-
+control process_packet {
     if(packet_count_meta.count < 5) {
         apply(forward);
     } else {
@@ -14,5 +12,12 @@ control ingress {
     if(packet_count_meta.count >= 10) {
         apply(reset_count);
     }
+}
 
+control ingress {
+    apply(state_lookup) {
+        hit {
+            process_packet();
+        }
+    }
 }

@@ -8,7 +8,7 @@ def main():
 
     while(1):
         p = "\x01Hello"
-        sendp(p, iface = "h1-eth0")
+        sendp(p, iface = "eth0")
         sleep(1)
 
 if __name__ == '__main__':

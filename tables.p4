@@ -1,6 +1,8 @@
 #include "parsers.p4"
 #include "registers.p4"
 #include "metadata.p4"
+#include "counters.p4"
+
 
 table state_lookup {
     reads {
@@ -26,6 +28,7 @@ table forward {
 
 action action_forward(out_port) {
     modify_field(standard_metadata.egress_spec, out_port);
+    count(fwd_counter, out_port);
 }
 
 table drop {

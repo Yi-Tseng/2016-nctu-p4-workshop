@@ -1,7 +1,7 @@
 header_type my_header_t {
     fields {
-        src: 48;
-        dst: 48;
+        src: 16;
+        dst: 16;
     }
 }
 

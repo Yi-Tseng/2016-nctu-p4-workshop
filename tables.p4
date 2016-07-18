@@ -1,5 +1,5 @@
-#include "parser.p4"
-#include "header.p4"
+#include "parsers.p4"
+#include "headers.p4"
 #include "registers.p4"
 
 table state_lookup {

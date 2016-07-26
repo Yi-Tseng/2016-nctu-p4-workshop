@@ -2,12 +2,8 @@
 
 
 control ingress {
-
-    if(!my_path_header.valid) {
-        apply(path_look_up);
+    if(not valid(my_path_header)) {
+        apply(path_lookup);
     }
-
     apply(forward);
-
-    return egress;
 }

@@ -6,7 +6,7 @@ to_hex = lambda x:" ".join([hex(ord(c)) for c in x])
 
 def handle_pkt(pkt):
     pkt = str(pkt)
-    if(len(pkt) > 20): return  # filter unexpect packet
+    if(len(pkt) > 40): return  # filter unexpect packet
     raw_hex = to_hex(pkt)
     print "Received %d bytes" % (len(pkt), )
     print "Hex data: %s" % (raw_hex, )
@@ -17,7 +17,14 @@ def handle_pkt(pkt):
     sys.stdout.flush()
 
 def main():
-    sniff(iface = "eth0", prn = lambda x: handle_pkt(x))
+    from sys import argv
+    if len(argv) < 2:
+        print "Usage receiver.py [host number]"
+        return
+
+    iface = "h%s-eth0" % (argv[1], )
+    print "Listen on %s" % (iface, )
+    sniff(iface = iface, prn = lambda x: handle_pkt(x))
 
 if __name__ == '__main__':
     main()

@@ -1,6 +1,6 @@
 header_type my_path_header_t {
     fields {
-        identifier: 24;
+        preamble: 24;
         path: 16;
     }
 }

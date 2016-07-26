@@ -25,13 +25,13 @@ def main():
 
     h1 = net.addHost('h1', cls=P4Host)
     h2 = net.addHost('h2', cls=P4Host)
-    h3 = net.addHost('h1', cls=P4Host)
-    h4 = net.addHost('h2', cls=P4Host)
+    h3 = net.addHost('h3', cls=P4Host)
+    h4 = net.addHost('h4', cls=P4Host)
 
     s1 = net.addSwitch('s1', cls = P4Switch, sw_path=SW_PATH, json_path=JSON_PATH, thrift_port=9091)
-    s2 = net.addSwitch('s2', cls = P4Switch, sw_path=SW_PATH, json_path=JSON_PATH, thrift_port=9091)
-    s3 = net.addSwitch('s3', cls = P4Switch, sw_path=SW_PATH, json_path=JSON_PATH, thrift_port=9091)
-    s4 = net.addSwitch('s4', cls = P4Switch, sw_path=SW_PATH, json_path=JSON_PATH, thrift_port=9091)
+    s2 = net.addSwitch('s2', cls = P4Switch, sw_path=SW_PATH, json_path=JSON_PATH, thrift_port=9092)
+    s3 = net.addSwitch('s3', cls = P4Switch, sw_path=SW_PATH, json_path=JSON_PATH, thrift_port=9093)
+    s4 = net.addSwitch('s4', cls = P4Switch, sw_path=SW_PATH, json_path=JSON_PATH, thrift_port=9094)
 
     net.addLink(s1, h1, port1=0, port2=0)
     net.addLink(s1, s3, port1=1, port2=1)

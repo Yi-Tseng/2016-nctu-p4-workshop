@@ -10,7 +10,7 @@ def main():
     while(1):
         p = "\x00\x00\x00\x01Hello%d" % (count, )
         count += 1
-        sendp(p, iface = "eth0")
+        sendp(p, iface = "h1-eth0")
         sleep(1)
 
 if __name__ == '__main__':

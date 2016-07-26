@@ -13,7 +13,7 @@ h1 - s1 - h2
 '''
 
 SW_PATH='/home/yi/bmv2/targets/simple_switch/simple_switch'
-JSON_PATH='/home/yi/2016-nctu-p4-workshop/demo.json'
+JSON_PATH='/home/yi/2016-nctu-p4-workshop/stateful-example/demo.json'
 
 
 def main():

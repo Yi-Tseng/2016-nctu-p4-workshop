@@ -1,4 +1,4 @@
-Demo code for P4 workshop
+Demo code for P4 workshop - Stateful example
 ====
 
 ##Demo Target:

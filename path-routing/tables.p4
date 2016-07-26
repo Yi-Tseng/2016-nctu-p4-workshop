@@ -1,12 +1,9 @@
 #include "parsers.p4"
-#include "registers.p4"
-#include "metadata.p4"
-#include "counters.p4"
 
 table path_lookup {
     reads {
-        my_header.src;
-        my_header.dst;
+        my_header.src: exact;
+        my_header.dst: exact;
     }
 
     actions {
@@ -41,12 +38,4 @@ action action_forward_pop_path(out_port) {
     remove_header(my_path_header);
 }
 
-table drop {
-    actions {
-        action_drop;
-    }
-}
 
-action action_drop() {
-    drop();
-}

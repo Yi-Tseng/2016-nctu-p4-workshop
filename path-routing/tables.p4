@@ -14,7 +14,7 @@ table path_lookup {
 
 action action_path_lookup(path_no) {
     add_header(my_path_header);
-    modify_field(my_path_header.identifier, 0xc0ffee);
+    modify_field(my_path_header.preamble, 0xc0ffee);
     modify_field(my_path_header.path, path_no);
 }
 

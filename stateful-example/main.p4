@@ -6,7 +6,7 @@ control process_packet {
     } else if(packet_count_meta.count < 10){
         apply(drop);
     } else {
-      apply(reset_count);
+        apply(reset_count);
     }
 
     apply(update_state);

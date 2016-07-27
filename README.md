@@ -1,14 +1,14 @@
 Demo code for P4 workshop
 ====
 
-##Demo Target:
+##Demos:
 
- - Path routing
+ - Overlay network
  - Stateful dataplane
 
 ## Slide:
 
-http://www.slideshare.net/YiTseng/2016-nctu-p4-workshop
+[http://www.slideshare.net/YiTseng/2016-nctu-p4-workshop](http://www.slideshare.net/YiTseng/2016-nctu-p4-workshop)
 
 ## Requirements:
 
@@ -16,18 +16,8 @@ http://www.slideshare.net/YiTseng/2016-nctu-p4-workshop
 - [P4 BMV2 configuration generator](https://github.com/p4lang/p4c-bm)
 - [Scapy](http://www.secdev.org/projects/scapy/)
 
-## Setup:
+## Optional requirement:
 
-- Install requirements
-- Setup your bmv2 and p4c-bmv path in env.sh
-- Generate json configuration for P4 switch
+- [vim plugin](https://github.com/TakeshiTseng/vim-language-p4)
+- [Atom plugin](https://github.com/TakeshiTseng/atom-language-p4)
 
-```bash
-$ ./compile_bmv2.sh
-```
-
-- Install scapy
-
-```bash
-$ sudo apt-get install python-scapy python-pyx python-gnuplot
-```

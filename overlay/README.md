@@ -1,9 +1,9 @@
-Demo code for P4 workshop - Path routing
+Demo code for P4 workshop - Overlay
 ====
 
 ##Demo Target:
 
- - Self defined protocol
+ - Custom protocol for overlay network
  - Header modification
 
 ##Topology:

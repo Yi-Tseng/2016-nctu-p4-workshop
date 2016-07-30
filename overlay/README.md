@@ -76,5 +76,5 @@ $ ./send_cmd.sh
 
 - The result shows on the screen.
 
-![result](https://raw.githubusercontent.com/TakeshiTseng/2016-nctu-p4-workshop/master/path-routing/screenshot/result.png)
+![result](https://raw.githubusercontent.com/TakeshiTseng/2016-nctu-p4-workshop/master/overlay/screenshot/result.png)
 

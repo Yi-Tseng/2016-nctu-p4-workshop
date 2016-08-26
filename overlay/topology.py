@@ -17,7 +17,7 @@ h3 0 - 0 s3 2 - 0 s4 2 - 0 h4
 '''
 
 SW_PATH='/home/yi/bmv2/targets/simple_switch/simple_switch'
-JSON_PATH='/home/yi/2016-nctu-p4-workshop/path-routing/demo.json'
+JSON_PATH='/home/yi/2016-nctu-p4-workshop/overlay/demo.json'
 
 
 def main():
